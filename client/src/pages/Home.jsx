@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const fetchMedicine = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/");
+        const response = await axios.get("https://meds-server.vercel.app/");
         setMedicine(response.data);
       } catch (err) {
         console.log(err);
@@ -21,7 +21,7 @@ const Home = () => {
   const handleDelete = async (medId) => {
     try {
       // Send a DELETE request to the server
-      await axios.delete(`http://localhost:8000/medicine/${medId}`);
+      await axios.delete(`https://meds-server.vercel.app/medicine/${medId}`);
 
       // Redirect or refresh the page after deletion
       window.location.reload();

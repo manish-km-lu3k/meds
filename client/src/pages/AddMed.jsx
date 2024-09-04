@@ -17,7 +17,7 @@ const AddMed = () => {
     e.preventDefault();
     try {
       if (med.name.length > 0 && med.info.length > 0) {
-        await axios.post("http://localhost:8000/medicine", med);
+        await axios.post("https://meds-server.vercel.app/medicine", med);
         navigate("/");
       } else {
         setIsEmpty(true);

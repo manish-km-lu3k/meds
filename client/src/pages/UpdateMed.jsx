@@ -19,7 +19,7 @@ const UpdateMed = () => {
     e.preventDefault();
     try {
       if (med.name.length > 0 && med.info.length > 0) {
-        await axios.put(`http://localhost:8000/medicine/${medId}`, med);
+        await axios.put(`https://meds-server.vercel.app/medicine/${medId}`, med);
         navigate("/");
       } else {
         setIsEmpty(true);
