@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors(
     {
         origin: ["https://meds-client.vercel.app"],
-        methods: ["POST", "GET"],
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
         credentials : true
     }
 ));
