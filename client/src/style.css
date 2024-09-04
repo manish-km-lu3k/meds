@@ -24,7 +24,7 @@ img {
     width: 8cm;
     border-radius: 5px;
     color: red;
-    padding-left: 50%;
+    /* padding-left: 50%; */
 }
 
 .info {
