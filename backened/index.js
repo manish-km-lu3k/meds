@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
     {
-        origin: ["https://meds-server.vercel.app"],
+        origin: ["https://meds-client.vercel.app"],
         methods: ["POST", "GET"],
         credentials : true
     }
