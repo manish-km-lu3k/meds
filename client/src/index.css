@@ -67,3 +67,6 @@ a.active,a:hover{
   color: rgb(66, 17, 1);
   cursor: pointer;
 }
+.link {
+  padding: 10px;
+}
