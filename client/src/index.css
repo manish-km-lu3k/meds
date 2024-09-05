@@ -70,3 +70,7 @@ a.active,a:hover{
 .link {
   padding: 10px;
 }
+.link:hover {
+  color: rgb(255, 89, 0);
+  background-color: inherit;
+}
